@@ -1,3 +1,4 @@
+# beta ver.  input 人数、時間　
 import openpyxl
 from datetime import timedelta
 
