@@ -8,7 +8,7 @@ dcday = SAGYOUDETA[2:]
 
 # 工数集計表を開く
 try:
-    file = openpyxl.load_workbook(r"C:\1\py\【2020{}】ダイエットクック日別勤怠集計表奥山ver.xlsx".format(SAGYOUDETA))
+    file = openpyxl.load_workbook(r"C:\1\py\【2021{}】ダイエットクック日別勤怠集計表奥山ver.xlsx".format(SAGYOUDETA))
     print("既存データ{}.xlsxを開きました,少々お待ち下さい。".format(SAGYOUDETA))
 except FileNotFoundError:
     file = openpyxl.load_workbook(r"C:\1\py\10241517\【20201022】ダイエットクック日別勤怠集計表奥山ver.xlsx")
@@ -220,7 +220,7 @@ while True:
 
     # NEW*月分勤怠表を入れる
 print("ファイルを保存しています・・・")
-file.save("【2020{}】ダイエットクック日別勤怠集計表奥山ver.xlsx".format(SAGYOUDETA))
+file.save("【2021{}】ダイエットクック日別勤怠集計表奥山ver.xlsx".format(SAGYOUDETA))
 masterfile.save("小田原NEWマスタ{}月奥山ver.xlsx".format(dcmonth))
 detailfile.save("NEW{}月分勤怠表奥山ver.xlsx".format(dcmonth))
 
